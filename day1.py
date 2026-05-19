@@ -1,7 +1,7 @@
 import yfinance as yf
 import pandas as pd
 
-# 抓股票数据（Apple）
+# get stock data（Apple）
 data = yf.download("AAPL", start="2020-01-01", end="2024-01-01")
 
 print(data.head())
