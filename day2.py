@@ -29,8 +29,8 @@ plt.show()
 
 data['Signal'] = 0
 
-data.loc[data['MA50'] > data['MA200'], 'Signal'] = 1  # 买
-data.loc[data['MA50'] < data['MA200'], 'Signal'] = -1 # 卖(做空)
+data.loc[data['MA50'] > data['MA200'], 'Signal'] = 1  # Buy
+data.loc[data['MA50'] < data['MA200'], 'Signal'] = -1 # Short
 
 print(data[['MA50','MA200','Signal']].tail())
 
